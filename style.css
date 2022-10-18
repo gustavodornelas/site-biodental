@@ -1,0 +1,319 @@
+html {
+    display: block;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0a225e;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+input, textarea, button {
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+    color: #354452;
+    background-color: #ebebeb;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+input:hover, input:focus {
+    outline: none;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.border-top {
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-image: linear-gradient(to right, #f54b64, #f58361) 1;
+}
+
+.border-botton {
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #f54b64, #f58361) 1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    font-weight: bolder;
+    transition: 0.3s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: 0 0 1em gray;
+}
+
+.sticker {
+    height: 5vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.li-sticker {
+    font-size: small;
+}
+
+.menu-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    height: 36px;
+}
+
+.logo-sticker {
+    height: 30px;
+}
+
+.logo-text {
+    font-size: 36px;
+    font-weight: bolder;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-text-blue {
+    color: #1e90ff;
+}
+
+.logo-text-sticker {
+    font-size: 30px;
+}
+
+.search {
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-sticker {
+    border-radius: 16px;
+    height: 24px;
+    width: 240px;
+    font-size: 14px;
+}
+
+.slogan {
+    background: url(img/slogan-1.png) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vh;
+}
+
+.slogan-text {
+    color: #ffffff;
+    font-size: 10vh;
+    text-shadow: 2px 2px 5px #354452;
+    transition: 1s;
+}
+
+.slogan-text-blue {
+    color: #1e90ff;
+    font-size: 12vh;
+    text-shadow: 2px 2px 5px #354452;
+    transition: 1s;
+}
+
+.slogan:hover .slogan-text {
+    font-size: 11vh;
+}
+
+.slogan:hover .slogan-text-blue {
+    font-size: 13vh;
+}
+
+.text {
+    text-align: justify;
+    text-indent: 1.5em;
+    padding: 15px;
+}
+
+.especialidade-conteiner {
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.especialidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75vw;
+}
+
+.especialidade h1 {
+    text-align: center;
+}
+
+.especialidade h2 {
+    text-align: center;
+    font-size: smaller;
+}
+
+.especialidade .text {
+    font-size: small;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+.especialidade-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-especialidade {
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.apresentacao {
+    display: flex;
+}
+
+.apresentacao-text {
+    padding: 15px;
+}
+
+.apresentacao h2 {
+    text-align: center;
+}
+
+.corpo-clinico-conteiner {
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+    padding: 50px;
+}
+
+.corpo-clinico {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding: 15px;
+}
+
+.corpo-clinico h2 {
+    text-align: center;
+}
+
+
+.corpo-clinico-img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 1em gray;
+    border-radius: 100%;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.corpo-clinico-img:hover {
+    scale: 1.1;
+    margin: auto;
+}
+
+.about-conteiner {
+    display: flex;
+}
+
+.about-conteiner h2 {
+    text-align: center;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+    padding: 15px;
+    width: 600px;
+}
+
+.contato input {
+    height: 35px;
+    width: 500px;
+    margin: 15px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.contato textarea {
+    width: 500px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.contato-footer {
+    align-content: center;
+}
+
+.contato button {
+    margin: 15px;
+    padding: 15px;
+    font-size: 16px;
+    justify-items: center;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: auto;
+    margin-top: 0;
+    width: 600px;
+}
+
+.endereco .text {
+    margin: 15px;
+    text-indent: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
+    padding: 1vw;
+    background-color: #ebebeb;
+}
