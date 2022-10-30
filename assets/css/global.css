@@ -1,0 +1,68 @@
+html {
+    display: block;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0a225e;
+}
+
+.logo-text {
+    font-size: 36px;
+    font-weight: bolder;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-text-blue {
+    color: #1e90ff;
+}
+
+.logo-text-sticker {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+input, textarea, button {
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+    color: #354452;
+    background-color: #ebebeb;
+    box-shadow: 0 0 1em gray;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+input:hover, input:focus {
+    outline: none;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.border-top {
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-image: linear-gradient(to right, #f54b64, #f58361) 1;
+}
+
+.border-botton {
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #f54b64, #f58361) 1;
+}
+

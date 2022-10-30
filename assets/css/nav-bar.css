@@ -1,0 +1,65 @@
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    font-weight: bolder;
+    transition: 0.3s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: 0 0 .25rem gray;
+}
+
+.search {
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+.sticker {
+    height: 5vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.li-sticker {
+    font-size: small;
+}
+
+.menu-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    height: 36px;
+}
+
+.logo-sticker {
+    height: 30px;
+}
+
+.search-sticker {
+    border-radius: 16px;
+    height: 24px;
+    width: 240px;
+    font-size: 14px;
+}

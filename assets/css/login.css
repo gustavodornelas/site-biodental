@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #ebebeb;
+    border-radius: 2rem;
+    height: 75vh;
+    width: 75vw;
+}
+
+.apresentacao-conteiner {
+    background: url(../img/slogan-1.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.login-conteiner {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notificacao {
+    font-size: 16px;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: red;
+    text-align: center;
+}
+
+.login-item {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-size: 20px;
+    height: 3rem;
+    width: 20rem;
+    background-color: #fff;
+}
