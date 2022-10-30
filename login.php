@@ -30,7 +30,7 @@ if (!isset($_SESSION)) {
 
             </div>
             <div class="login-conteiner">
-                <form method="POST" action="login-script.php">
+                <form method="POST" action="./assets/php/login-script.php">
                     <div class="login-item"><img src="./assets/img/logo.png" alt="" srcset=""></div>
                     <div class="login-item">
                         <div class="logo-text">BIO</div>

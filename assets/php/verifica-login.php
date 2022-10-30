@@ -4,6 +4,6 @@ if (!isset($_SESSION)) {
 }
 
 if (!$_SESSION['usuario']) {
-    header('location: login.php');
+    header('location: ../../login.php');
     exit();
 }

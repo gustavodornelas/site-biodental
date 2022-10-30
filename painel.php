@@ -34,7 +34,7 @@ include('verifica-login.php');
                 <li><a href="#">PACIENTES</a></li>
                 <li><a href="#">CONSULTAS</a></li>
                 <li><a href="#"><?php echo strtoupper($_SESSION['usuario']) ?></a></li>
-                <li><a href="logout-script.php">LOGOUT</a></li>
+                <li><a href="./assets/php/logout-script.php">LOGOUT</a></li>
             </ul>
         </nav>
     </header>
