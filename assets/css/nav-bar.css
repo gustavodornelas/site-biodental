@@ -1,13 +1,10 @@
-
 header {
-    position: fixed;
-    top: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 10vh;
     font-weight: bolder;
@@ -23,15 +20,11 @@ nav {
     transition: 0.3s;
 }
 
-
-.sticker {
-    height: 5vh;
-}
-
 .nav-list {
     list-style: none;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2rem;
 }
 
 .nav-list li {
@@ -47,19 +40,9 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 2rem;
 }
 
 .logo {
     height: 36px;
-}
-
-.logo-sticker {
-    height: 30px;
-}
-
-.search-sticker {
-    border-radius: 16px;
-    height: 24px;
-    width: 240px;
-    font-size: 14px;
 }

@@ -27,13 +27,17 @@ a {
     transition: 0.3s;
 }
 
-input, textarea, button {
-    border-radius: 20px;
+input, textarea, button, select, i {
+    border-radius: 1rem;
     border: 0;
     text-align: center;
     color: #354452;
-    background-color: #ebebeb;
-    box-shadow: 0 0 1em gray;
+    font-weight: bold;
+}
+
+button {
+    background-color: #1e90ff;
+    color: #fff;
 }
 
 a:hover {
@@ -49,10 +53,14 @@ input:hover, input:focus {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
+
+
 
 .border-top {
     border-top-width: 5px;

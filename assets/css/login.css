@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .content {
@@ -26,30 +26,91 @@ body {
 
 .login-conteiner {
     padding: 2rem;
+    width: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+form {
+    width: 80%;
 }
 
 .notificacao {
-    font-size: 16px;
-    height: 3rem;
-    width: 20rem;
-    border-radius: 1rem;
-    background-color: red;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f54b64;
 }
 
-.login-item {
+.notificacao h2 {
+    font-size: 1rem;
+}
+
+.login-head {
     margin: 2rem auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-input {
-    font-size: 20px;
-    height: 3rem;
-    width: 20rem;
-    background-color: #fff;
+.login-item {
+    position: relative;
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-item input {
+    position: relative;
+    width: 100%;
+    padding: 2rem 1rem 1rem;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #fff !important;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.login-item span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.login-item input:valid~span,
+.login-item input:focus~span {
+    transform: translateX(0px) translateY(-34px);
+}
+
+.login-item i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #1e90ff;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.login-item input:valid~i,
+.login-item input:focus~i {
+    height: 44px;
+}
+
+.login-item button {
+    padding: 1rem 1rem 1rem;
 }

@@ -1,6 +1,11 @@
 <?php
 if (!isset($_SESSION)) {
-  session_start();
+    session_start();
+}
+
+if (isset($_SESSION['usuario']) != null) {
+    header("location: painel.php");
+    exit();
 }
 ?>
 
@@ -31,18 +36,20 @@ if (!isset($_SESSION)) {
             </div>
             <div class="login-conteiner">
                 <form method="POST" action="./assets/php/login-script.php">
-                    <div class="login-item"><img src="./assets/img/logo.png" alt="" srcset=""></div>
-                    <div class="login-item">
-                        <div class="logo-text">BIO</div>
-                        <div class="logo-text logo-text-blue">DENTAL</div>
-                    </div>
+                    <a href="index.html">
+                        <div class="login-head">
+                            <img src="./assets/img/logo.png" alt="" srcset="">
+                            <div class="logo-text">BIO</div>
+                            <div class="logo-text logo-text-blue">DENTAL</div>
+                        </div>
+                    </a>
 
                     <div class="login-item">
                         <?php
                         if (isset($_SESSION['nao_autenticado'])) :
                         ?>
-                            <div class="notificacao">
-                                <p>ERRO: Usuário ou senha inválidos.</p>
+                            <div class="notificacao border-botton">
+                                <h2>ERRO: Usuário ou senha inválidos.</h2>
                             </div>
                         <?php
                         endif;
@@ -50,10 +57,20 @@ if (!isset($_SESSION)) {
                         ?>
                     </div>
 
-                    <div class="login-item"><input type="text" name="usuario" id="usuario" placeholder="Login"></div>
-                    <div class="login-item"><input type="password" name="senha" id="senha" placeholder="Senha"></div>
-                    <div class="login-item"><input type="submit" value="entrar" id="entrar" name="entrar"></div>
-                    
+                    <div class="login-item">
+                        <input type="text" name="usuario" id="usuario" required>
+                        <span>Usuário</span>
+                        <i></i>
+                    </div>
+                    <div class="login-item">
+                        <input type="password" name="senha" id="senha" required>
+                        <span>Senha</span>
+                        <i></i>
+                    </div>
+                    <div class="login-item">
+                        <button type="submit" id="entrar" name="entrar">ENTRAR</button>
+                    </div>
+
                 </form>
             </div>
         </div>
